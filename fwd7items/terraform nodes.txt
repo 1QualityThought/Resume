@@ -1,0 +1,121 @@
+                                        TERRAFORM
+									   
+1.What is terraform ?
+A.>Terraform is a tool for building ,changeing and versioning infrastructure safely and efficiently.
+  >Terraform can manage existing and popular service providers as well as custom in house solutions.
+  
+2.What is terraform provider ?
+A.>Terraform is used to create, manage and update infrastructure resource such as physical machines ,
+   VMs ,network switches ,containers and more .
+  >Almost any infrastructure  type can be represented as a resource in terraform.
+  
+3.What is provisinor ?
+A.>Provisioners are used to execute scripts on a local or remote machine as part of resource creation or destruction .  
+  >Provisioners can be used to bootstrap a resource, cleanup before destory, run configuration management, etc
+  
+4.What is modules ?
+A.>Modules in terraform are self-contained package  of terraform configurations that are managed as a group
+  >Modules  are used to create reusable components in terraform as well as for basic code  organization.
+  >Modeles is execute scripts/templetes on terraform.
+  
+5.What is resource ?
+A.>The most important thing you'll configure with terraform are resources. Resources are a component of your infrastructure.
+  >It might be some low level component such as a physical server ,virtual machine ,or container.
+  >It can be a higher level component such as an email provider ,DNS record, or database provider.
+  
+6.What is backend ?
+A.>A "backend" in terraform determines how state is loaded and how an operation such as apply is executed.
+  >This abstraction enables non-local file state storage ,remote execution.
+  
+7.What is data source ?
+A.>Data source allow data to be fetched or computed for use else where in terraform configuration.
+  >Use of data source allow a terraform configuration to build on information defined outside of terraform.
+  >Or defined by another separate terraform configuration.
+  
+8.What is variable ?
+A.>Input variable serve as parameters for a terraform module.
+  >When used in the root module of a configuration ,variable can be set from CLI arguments and environment variable.
+  >For child modules ,they allow values to pass from parent to child.
+
+9.What is output ?
+A.>Output s define values that will be highlighted to the user when terraform applies,and can be 
+    queried easily using the output command .
+  >Output usage is covered in more detail in the getting started guide.
+
+10.What is workspace ?
+A.>A workspace is a virtual environment or an area within an application or an operating system that is dedicated to 
+   a specific task, project, or set of activities  
+  >For example, in a software development environment, a workspace may refer to a collection of files, folders, and
+   tools that are specific to a particular software project.
+   
+11.What are the features of Terraform?
+A.>Terraform Cloud Plans and Features
+  >Free Organizations. 
+  >Paid Features.
+  >Changing Your Payment Plan. 
+  >Remote Terraform Execution. 
+  >Remote State Management, Data Sharing, and Run Triggers. 
+  >Version Control Integration. 
+  >Command Line Integration. 
+  >Private Registry .  
+  
+12.Infrastructure as code ?
+A.>IAC stands for "Infrastructure as Code". It is a methodology and a set of practices for managing and provisioning
+    infrastructure through the use of code, rather than manual processes.  
+  >With IAC, infrastructure is defined and managed as code, stored in version control systems like Git. 
+    This makes it possible to automate the process of creating, updating, and destroying infrastructure, and to track changes over time.
+	
+13. What is implicit ?
+A. >Implicit dependencies are the primary way that Terraform understands the relationships between your resources
+   
+14. What is explicit ?
+A .>Explicit dependencies are dependencies that are set up “manually” between resources, using the depends_on keyword.
+
+15. What is Terraform D?
+A. Terraform D is a plugin used on most in-service systems and Windows. Terraform init by default searches next directories for plugins.   
+
+16. What are some basic CLI commands? 
+A .Following is a list of some basic CLI commands:
+
+  >terraform init: The terraform init CLI command is used to prepare a working directory for other commands.
+  >terraform destroy: The terraform destroy CLI command is used to destroy the previously-created infrastructure.
+  >terraform validate: The terraform validate CLI command is used to check whether the configuration is valid or not.
+  >terraform apply: The terraform apply CLI command is used to create or update the infrastructure.
+  >terraform plan: The terraform plan CLI command shows the changes needed by the current configuration.
+  >terraform refresh: The terraform refresh CLI command is used to refresh the state file.
+  >terraform graph: The terraform graph CLI command creates a DOT-formatted graph.
+  
+17.Explain Oracle Cloud Infrastructure.
+A. Oracle cloud offered by Oracle Corporation is a cloud computing service providing storage, servers, applications, 
+   services, and network through a global network of managed data centers by Oracle Corporation. These services are
+   provisioned on-demand over the Internet by the company.  
+
+18.Define null resource in Terraform.
+A.null_resource implements standard resource library, but no further action is taken. The triggers argument allows an
+  arbitrary set of values that will cause the replacement of resources when changed.
+  
+19.What is Terragrunt, and what are its uses?  
+A.Terragrunt is a thin wrapper that provides extra tools for keeping your configurations DRY, working with multiple
+  Terraform modules, and managing remote state.
+  
+20.Explain State File Locking?
+A.State locking is for locking the state during a deployment such that no two terraform processes try to update
+  the same state at the same time.  
+  
+21.what is terraform plugin ?
+A. Terraform Plugins: Plugins are executable binaries written in Go that communicate with Terraform Core over an RPC interface. 
+   Terraform currently supports one type of plugin called providers.  
+   
+22.What is terraform enterprise ?
+A.>Terraform Enterprise is our self-hosted distribution of Terraform Cloud.
+  >It offers enterprises a private instance of the Terraform Cloud application, with no resource limits and with additional
+    enterprise-grade architectural features like audit logging and SAML single sign-on.   
+	
+23. what is namespace in terraform ?
+A .What is a Namespace? A Namespace is a Kubernetes resource that can be used to create a virtual environment in your 
+   cluster to separate resources. 	
+
+24.what is terraform taint ?
+A.The terraform taint command informs Terraform that a particular object has become degraded or damaged. Terraform represents this by
+  marking the object as "tainted" in the Terraform state, and Terraform will propose to replace it in the next plan you create.
+    

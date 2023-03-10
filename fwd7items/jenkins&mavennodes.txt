@@ -1,0 +1,160 @@
+													JENKINS
+1.what is jenkins ?
+A.Jenkins is an open source automation server. It helps automate the parts of software development related to
+  building, testing, and deploying, facilitating continuous integration and continuous delivery.
+             Initial release date: 2 February 2011
+			 Developer: Kohsuke Kawaguchi
+			 License: MIT License
+			 Platform: Java 11, Java 17
+			 Stable release: 2.386 / 10 January 2023; 32 days ago
+			 Programming language: Java
+			 
+2.What is Jenkins and why it is used?
+A.Jenkins is a Java-based open-source automation platform with plugins designed for continuous integration.
+  It is used to continually create and test software projects, making it easier for developers and DevOps engineers to 
+  integrate changes to the project and for consumers to get a new build.			 
+  
+3.What is CI process in Jenkins?
+A.Continuous Integration is a software development process where a code is continuously tested after a commit to ensure there are no bugs. 
+  In large teams, many developers work on the same code base.
+
+4.what is CD process in jenkins ?
+A.Continuous delivery (CD) is the automated delivery of completed code to environments like testing and development. 
+  CD provides an automated and consistent way for code to be delivered to these environments. Continuous deployment is the next step of continuous delivery.  
+  
+5.what is continuous deployment ?
+A.Continuous deployment is a strategy in software development where code changes to an application are released automatically into the production environment. 
+  This automation is driven by a series of predefined tests. Once new updates pass those tests, the system pushes the updates directly to the software's users  
+  
+6.what is ci/cd pipeline ?
+A.Continuous integration and continuous deployment (CI/CD) pipeline is a series of steps that must be performed in order to deliver a new version of software.
+  CI/CD pipelines are a practice focused on improving software delivery throughout the software development life cycle via automation  
+  
+7.what is blue ocean ?
+A. Blue Ocean is a new user experience for Jenkins based on a personalizable, modern design that allows users to graphically create,
+   visualize and diagnose Continuous Delivery (CD) Pipelines "" 
+   
+8. What is a Jenkins job?
+A.Jenkins is an open source continuous integration/continuous delivery and deployment (CI/CD) automation software DevOps tool written in the
+  Java programming language.It is used to implement CI/CD workflows, called pipelines.   
+  
+9. What are the types of Jenkins pipelines?
+A. >CI/CD pipeline 
+   >Secripted pipeline   
+   >Declarative pipeline
+   
+10.what is jenkins pipeline ?
+A.Jenkins Pipeline (or simply "Pipeline") is a suite of plugins which supports implementing and integrating continuous delivery pipelines into Jenkins.
+
+11.What is Jenkins Build Cause?   
+A. What is Jenkins Build Cause? Build Cause is a text attribute that represents what made a job's build to be triggered, say it could be 
+   a Jenkins User (from UI), Timer for Scheduled jobs, Upstream jobs for a job which was triggered by upstream job, etc.
+   
+12.what is ci/cd pipeline tools ?
+A.1. Jenkins · 2. CircleCI · 3. TeamCity · 4. Bamboo · 5. GitLab · 6. Buddy · 7. Travis CI · 8. Codeship.
+
+13.what is build triggers ?
+A.A Cloud Build trigger automatically starts a build whenever you make any changes to your source code.
+  You can configure the trigger to build your code on any changes to the source repository or only changes that match certain criteria.   
+  
+14.what is day build ?
+A.Day Builds:
+   Builds done during active development
+  Two options:
+  >Build for every change pushed by a developer
+  >Build for every one hour or two hours in active working timings 
+  >Generally day builds are on a different branch (develop, sprint-n-develop etc…)
+  
+15.Nightly Builds:
+    >Consolidated build for all the work done by dev team(s) in one day
+    >Build once in a day (Scheduled when no development )
+    >Build should
+	>Build the code
+	>Unit tests
+	>Static code analysis
+	>Code Coverage
+	>Run automated system tests and performance tests which require application to be deployed.
+	>Tests might be developed using test automation tools like
+		.Selenium
+		.JMeter
+		.Postman
+		.Loadrunner
+	>Nightbuilds on different branch (RELEASE_v1.0.0_SPRINTn)
+
+16.What is upstream and downstream jobs?
+A.>An upstream job is a configured project that triggers a project as part of its execution.
+  >A downstream job is a configured project that is triggered as part of a execution of pipeline. 
+ 
+17.what is Azure DevOps ?
+A.Azure DevOps provides the services for allowing teams to plan work, code collaboration and development, build and deploy applications.
+  Azure DevOps comes in two offerings
+  Azure DevOps Server (Self Hosted)
+  Azure DevOps Services
+ 
+18. what is jenkins repository ?
+A.The Jenkins project uses its own Artifactory binary repository, to distribute core, library, and plugin releases.
+
+19.what is jenkins cluster ?
+A.Jenkins is an open-source continuous integration and delivery system designed to ensure build and deploy automation.
+
+20.what is jenkins selenium ?
+A.Jenkins is a continuous integration tool that enables continuous testing, build, and deployment of iterative code changes.
+  CI/CD tools help catch failures ahead of the production stage and mitigate them as they occur
+  
+21.what is jenkins stages ?
+A.A stage block defines a conceptually distinct subset of tasks performed through the entire Pipeline 
+
+22.what is jenkins plugins ?
+A.Plugins are the primary means of enhancing the functionality of a Jenkins environment to suit organization- or user-specific needs
+
+										
+											MAVAN
+											
+1.what is maven ?
+A.Maven is a build automation tool used primarily for Java projects. Maven can also be used to build and manage projects written 
+  in C#, Ruby, Scala, and other languages. The Maven project is hosted by the Apache Software Foundation, where it was formerly part of the Jakarta Project.
+        Initial release date: 13 July 2004
+		Developer: Apache Software Foundation
+		License: Apache License 2.0
+		Stable release: 3.9.0 / 31 January 2023; 11 days ago
+		Programming languages: Java, C#, C++											
+		
+
+3.What is a Maven lifecycle?
+A. Maven is based around the central concept of a build lifecycle. What this means is that the process for building and distributing
+   a particular artifact (project) is clearly defined
+
+4.What is POM.XML?
+A.POM stands for Project Object Model. It is fundamental unit of work in Maven. 
+  It is an XML file that resides in the base directory of the project as pom. xml. 
+  The POM contains information about the project and various configuration detail used by Maven to build the project(s).
+
+5.What are the types of Maven?
+A.There are 3 types of maven repository:
+	.Local Repository.(Maven local repository is created by maven in your local system when you run any maven command. More details.)
+	.Central Repository.(Maven community creates maven central repository on the web. More details.)
+	.Remote Repository.(Maven remote repository is located on the web by different vendors. So you need to define the dependency in pom.xml file manually)		
+	
+6.What is Maven dependencies?
+A.What Is a Maven Dependency. In the context of Maven, a dependency is simply a JAR file used by a Java application.
+  Based on the POM file, Maven will download and add the JAR file to our Java path.	
+  
+7. What is an archetype?
+A. Archetype is the maven plugin. It creates the project structure 
+
+8.What is a MOJO?
+A.A MOJO stands for Maven plain Old Java Object. Each MOJO is an executable goal in Maven, and a plugin is a distribution of one or more related MOJOs.
+
+9.What is the difference between Ant and Maven?
+A.					Ant													Maven
+		   .It is a toolbox.										.It is a framework.
+		   .It is mainly a build tool.								.It is mainly a project management tool.
+		   .There is no life cycle.									.There is alife cycle.
+		   .Ant doesn't have formal conventions.					.Maven has a convention to place source code, compiled code etc.
+		   .Ant is procedural.										.Maven is declarative.
+		   .The ant scripts are not reusable.						.The Maven plugins are reusable.
+
+10.What are the advantages of Maven?
+A. No need to add jar file in each project
+   Creates right directory structure
+   Builds and deploys the project

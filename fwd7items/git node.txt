@@ -1,0 +1,155 @@
+1.what is git ?
+A.Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+			Initial release date: 7 April 2005
+			Repository: git.kernel.org/pub/scm/git/git.git
+			License: GPL-2.0-only
+			Operating system: POSIX (Linux, macOS, Solaris, AIX), Windows
+			Stable release: 2.39.2 / 14 February 2023
+			Programming languages: Python, C, C++, Perl, Tcl
+			Developer: Linus Torvalds, Junio C Hamano
+2.what is git flow ?
+A.>A develop branch is created from master
+  >A release branch is created from develop
+  >Feature branches are created from develop
+  >When a feature is complete it is merged into the develop branch
+  >When the release branch is done it is merged into develop and master
+  >If an issue in master is detected a hotfix branch is created from master
+  >Once the hotfix is complete it is merged to both develop and master	
+
+3.what is git hub ?
+A.GitHub is a web-based version-control and collaboration platform for software developers. ... GitHub, 
+  which is delivered through a software-as-a-service (SaaS) business model, was started in 2008 and was founded on Git, 
+  an open source code management system created by Linus Torvalds to make software builds faster.
+  
+4.what is git hub flow ?
+A.>create branch.   
+  >add commit.
+  >open a pull request.
+  >discuss and review.
+  >merge and deploy. 
+  >celebrate.
+
+5.what is git lab ?
+A.it is a web-based Git-repository manager providing wiki, issue-tracking and CI/CD pipeline features,
+  using an open-source license, developed by GitLab Inc.
+
+6.what is bit bucket ?
+A.It is our Git repository management solution designed for professional teams. 
+  Bitbucket is a Git-based source code repository hosting service owned by Atlassian. 
+  Bitbucket offers both commercial plans and free accounts with an unlimited number of private repositories.
+
+  Written in?: ?Python	Created by?: ?Jesper Noehr
+  Owner?: ?Atlassian	Registration?: ?Required with optional OpenID
+  
+7.what is git merge ?
+A.>Merging is Git's way of putting a forked history back together again	  
+  >Merging applies all commits from one branch to another branch, or we can say it merges the complete branches.
+  
+8.what is rebase ?
+A.>Rebasing is the process of moving or combining a sequence of commits to a new base commit. 
+  >Git rebase is a command used to get changes from one branch onto another by rewriting history.
+  
+9.what is cheery pick ?
+A.Git cherry-pick applies the changes from specific commits from one branch to another branch. 
+
+10.what is git branch ?
+A.In Git, branches are a part of your everyday development process. Git branches are effectively a pointer to a snapshot of your changes
+
+11.what is git repository ?
+A.Repositories in GIT contain a collection of files of various different versions of a Project. These files are imported from the repository .
+
+12.what is version control system ?
+A.Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems
+  are software tools that help software teams manage changes to source code over time.   
+    
+	       there are two types of version control systems
+		   1.centrallized version control system .
+		   2.Distributed version control system .
+		   
+	Centralized version control systems — such as CVS, Perforce, and SVN — require users to pull the latest version from the server to
+	download a local copy on their machine. Contributors then push commits to the server and resolve any merge conflicts on the main repository.	   
+	
+	An software development, distributed version control is a form of version control in which the complete codebase, including its full history,
+	is mirrored on every developer's computes
+	
+13.what is pull and push ?
+A.The git pull command is used to fetch and download content from a remote repository and immediately update the local repository to match that content.
+  The git push command is used to upload local repository content to a remote repository. 
+
+14.what si git clone ?
+A.git clone is primarily used to point to an existing repo and make a clone or copy of that repo at in a new directory, at another location.
+
+15.what is difference between git and svn ?
+A.						Git													SVN
+	1.It's a distributed version control system.				1.It's a Centralized version control system
+	2.Git is an SCM (source code management).					2.SVN is revision control.
+	3.Git has a cloned repository.							3.SVN does not have a cloned repository.
+	4.Git does not have a Global revision number.				4. SVN has a Global revision number.
+	5.Git stored content as metadata.						5.SVN stores content as files.
+	6.Git has more content protection than SVN.				6.SVN's content is less secure than Git.
+	7.Linus Torvalds developed git for Linux kernel.			7. CollabNet, Inc developed SVN.
+	8.Git is distributed under GNU (General public license).	     8.SVN is distributed under the open-source license.
+  
+16.what is git stash ?
+A.useful to move to another task .git stash puts the working directory on a stask and gives a clean working directory .
+  later ,get all edits back using git stash apply . 
+  
+17.what is git conflict ?
+A.two commit have changes in the same file and some location a conflict has to be resolve for correct code to be commited .
+
+18.what is git reset ?
+A.git reset is a powerful command that is used to undo local changes to the state of a Git repo. 
+
+19.what is fork ?
+A.A fork is a new repository that shares code and visibility settings with the original “upstream” repository.
+
+20.whaat the difference between git and github ?
+            Git										GitHub
+1.	Git is a software.							GitHub is a service.
+2.	Git is a command‑line tool					     GitHub is a graphical user interface
+3.	Git is installed locally on the system		     GitHub is hosted on the web  
+
+21.what is subgit and why it is used ?
+A.SubGit is a tool for a smooth, stress-free SVN to Git migration. It creates a writable Git mirror of
+  a local or remote Subversion repository and that way you can use both Subversion and Git as long as you like.
+  
+22.what is bisect and how do you use it ?
+A. The git bisect  command performs a binary search to detect the commit .which introduced a bug on regression in the project history .
+
+23.working directory ?  
+A.the working directory of a process is a directory of a hierarchical file system, if any, dynamically associated with each process.
+
+24.staging area ?
+A. >the working area is where files that are not handled by git. These files are also referred to as "untracked files." 
+    Staging area is files that are going to be a part of the next commit 
+   
+25.local and remote repository ?
+A. >He local repository is a directory on the computer where Maven runs 
+   >Remote repositories are versions of your project that are hosted on the Internet or network somewhere.
+   
+26.what is the functionality of git -ls -tree ?
+A.the git ls tree command is used to list the content of tree object .
+
+27.what is bare repository ?
+A.> A bare repository is the same as default, but no commits can be made in a bare repository
+  >A bare Git repository is typically used as a Remote Repository that is sharing a repository among several different people. 
+  
+28.what does git pull origin master do ?
+A.git pull origin master` fetches commits from the master branch of the origin remote (into the local origin/master branch),
+ and then it merges origin/master into the branch you currently have checked out. `git pull` only works if the branch you
+ have checked out is tracking an upstream branch.
+
+29.what is differrence between git fetch and git pull ?
+A. >If you do a git fetch it will just fetch all the changes in the remote repository (Github) and move the origin/master pointer to HEAD
+   >If you do a git pull, it will do basically fetch (as explained previously) and merge any new changes to your master branch and move the pointer to HEAD.
+                       So, git pull=git fetch + merge. 
+					   
+30.what are the advantages of using git ?
+A. >faster release cycles
+   >Easy team collaboration 
+   >widespread acceptance  
+   >maintance the integratingof source code.
+
+31.what is origin in git ?
+A.origin is a shorthand name for the remote repository that aproject was originally cloned from.
+ 

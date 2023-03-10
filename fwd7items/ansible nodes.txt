@@ -1,0 +1,124 @@
+
+1. what is ansible ?
+A. Ansible is a suite of software tools that enables infrastructure as code. 
+   It is open-source and the suite includes software provisioning, configuration management,
+   and application deployment functionality.
+            Initial release date: 20 February 2012
+			Developer: Red Hat Software
+			License: GNU General Public License version 3
+	         Operating system: Linux, Unix-like, MacOS, Windows
+			Stable release: 6.4.0 / 15 September 2022; 30 January 2023
+			Programming languages: Python, Ruby, PowerShell
+			 
+  
+2. what is feature of ansible ?
+A. > it is open source 
+   > highly scalable 
+   > easy installation and configuration
+   > it is agent less client configuration 
+   > written python ,so it easy to read and extend.
+   
+3. which requirement are used in ansible ?
+A. ssh client(open ssh)
+   highly scalable
+   
+4. what is the default inventory file?
+A. /etc/ansible/hosts
+
+5. what is the default ansible config ?
+A. /etc/ansible/ansible.cfg
+
+6. what is ansible playbook ? 
+A. > ansible playbook is nothing but YML scriting   
+   > ansible playbook is an organized unit of script that defineds work for a server 
+      configuration managed by the automation tool ansible.
+
+7. what is YML file ?
+A. > YML short name is ain't markup language 
+   > YML is data serilization language desinged to be directly writable and redable by humans.
+   
+8. what is ansible ad-hoc command ?
+A. Ansible ad hoc commands are CLI commands used for simple and one-time tasks.
+    ansible ad-hoc command is not reuseble command.
+   
+9. what is ansible configuration management ?
+A. configuration management with IT configuration management covers set of engineering practies
+   for managing  following :
+     > software
+     > hardware 
+	 > people
+	 >process
+	 >infrastructure
+	  
+10. how ansible work ?
+ A. > Ansible works by connecting to your nodes and pushing out small programs—called modules
+    > Ansible then executes these modules and removes them when finished.
+    > your library of modules can reside in any machine ,and there are no server demons,or 
+       database required 
+
+11. what is variable?
+A . Ansible uses variables to manage differences between systems. 
+    With Ansible, you can execute tasks and playbooks on multiple different systems with a single command
+    It is helps to use and assign a value to a variable and use that anywhere in the playbook.
+
+
+12. what is roles ?
+A . >ansible role are consist of many playbook 
+	>roles are a way to group of multiple tasks  
+
+    >roles are set of tasks	
+	>it is easily reuse the code by anyone if the roles is suitable to someone
+	> it can be easily modify and will reduce the syntx error.
+	
+13.what is inventory ?
+A .The Ansible inventory file defines the hosts and groups of hosts upon which commands, modules, and tasks in a playbook operate.
+   The file can be in one of many formats depending on your Ansible environment and plugins.
+
+14.what is templetes ?
+A . >templete is file which contains all your cc parameters but the dynamic value are  given as variable.
+    >Ansible templates allow you to create files dynamically by interpolating variables or using logical expressions 
+     such as conditionals and loops. 
+    
+15.what is main benefits of ansible ?
+A . >Productvity:it helps in delivering and deploying with speed . it increase productivity in an organization
+    >Automation :ansible provides very good options for automation . with automation ,people can focus on 
+	             delivery smart solutions
+	>Largescale :ansible can be used in small as well as very large-scale organizations
+	>Simple Devops:with ansible we can write automation in a human-readble language ,this simplifies the task of devops
+	  
+16.	what is task ?
+A . list of task is used to automatically excute against hosts and Groups of hosts form your Ansible inventory.
+    Each module within an Ansible Playbook performs a specific task
+
+17.what is tower ?
+A . Ansible Tower is the enterprise version of Ansible .ansible tower is the free for usages till 10 nodes.
+
+18.what is handler ?
+A .handlers are like special task ,which only run if the tasks contains a "notify" direction.
+
+19.what is job ?
+A .job means a task or working on one specific project.
+   A job is an instance of Tower launching an Ansible playbook against an inventory of hosts. 
+
+20.what is tags ?
+A .tags is to attribute that you can set to an ansible structure (roles,tasks,plays).
+
+21.what is ansible collection ?
+A . Ansible Collections are the format in which Ansible content like Modules, Roles, Playbooks and Plugin, etc.
+    can be distributed to the Ansible users across Ansible community and Ansible users 
+
+22.what is ansible registry ?
+A. Ansible register is a way to capture the output from task execution and store it in a variable.
+
+23.what is play book modules ?
+   >Roles
+   >handlers
+   >inventers
+   >templete
+   >variables
+
+24.what is ansible galaxy ?
+A.Ansible Galaxy is a galaxy website where users can share roles and to a command-line tool  for installing,
+  creating, and managing roles.
+   
+   

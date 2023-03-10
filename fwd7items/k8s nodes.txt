@@ -1,0 +1,137 @@
+1.what is k8s ?
+A.Kubernetes is an open-source container orchestration system for automating software deployment, scaling,
+  and management. Originally designed by Google, the project is now maintained by the Cloud Native Computing Foundation
+  Initial release date: 9 September 2014
+  License: Apache License 2.0
+  Programming language: Go
+  Developer: Google, GitHub, Rancher Labs, Cloud Native Computing Foundation
+  
+2.what is architeacture ?
+A.>Kubernetes is an architecture that offers a loosely coupled mechanism for service discovery across a cluster.
+  >A Kubernetes cluster has one or more control planes, and one or more compute nodes.  
+  
+3.what is namespece in k8s ?
+A.>Namespaces are a way to organize clusters into virtual sub-clusters — they can be helpful when different teams or projects share a Kubernetes cluster.
+  >Any number of namespaces are supported within a cluster, each logically separated from others but with the ability to communicate with each other.  
+  
+4.what is clusters ?
+A.>A Kubernetes (K8s) cluster is a grouping of nodes that run containerized apps in an efficient, automated, distributed, and scalable manner. 
+  >K8s clusters allow engineers to orchestrate and monitor containers across multiple physical, virtual, and cloud servers.  
+  
+5.what is server in k8s ?
+A.>A Kubernetes cluster is a set of nodes that run containerized applications.
+  >Containerizing applications packages an app with its dependences and some necessary services.
+  >They are more lightweight and flexible than virtual machines.  
+
+       Services: Services provide a consistent IP address and DNS name for a set of pods. This allows other pods and services to communicate
+                 with the pods in the service using a stable endpoint
+
+
+6.what is master node in k8s ?
+A.The master node is responsible for cluster management and for providing the API that is used to configure and manage resources within the Kubernetes cluster.  
+
+7.what is node in k8s ?
+A.Node is a worker machine in Kubernetes and may be either a virtual or a physical machine, depending on the cluster. Each Node is managed by the control plane.
+
+8.what is replica set in k8s ?
+A.>A ReplicaSet (RS) is a Kubernetes object used to maintain a stable set of replicated pods running within a cluster at any given time. 
+  >A Kubernetes pod is a cluster deployment unit that typically contains one or more containers.
+  
+9.what is pod in k8s ?
+A.> pod is the smallest execution unit in Kubernetes 
+  >1.How many pods are in a cluster A. 110 pods   2.Run pods on nodes  A.32 pods                             
+  
+10.what is minikube in k8s ?
+A.>Minikube is a lightweight Kubernetes implementation that creates a VM on your local machine and deploys a simple cluster containing only one node.
+  >Minikube is available for Linux, macOS, and Windows systems
+  
+11.what is logs ?
+A.Logs are historical records of any relevant events that have occurred within a system, including events like transactions, errors, and intrusions  
+
+12.what is labels ?
+A.Labels are key/value pairs that are attached to objects, such as pods.
+
+13.what is load balance ?
+A.>The load balancer tracks the availability of pods with the Kubernetes Endpoints API.
+   When it receives a request for a specific Kubernetes service, the Kubernetes load balancer sorts in order or round robins the request 
+   among relevant Kubernetes pods for the service.
+   
+14.what is secret in k8s ?
+A.A Secret is an object that contains a small amount of sensitive data such as a password, a token, or a key   
+
+15.what is volume ?
+A. Kubernetes volume is a directory that contains data accessible to containers in a given Pod in the orchestration and scheduling platform. 
+
+16.what is kubelet ?
+A.The kubelet is the primary "node agent" that runs on each node. It can register the node with the API server using one of: 
+  the hostname; a flag to override the hostname; or specific logic for a cloud provider. 
+  
+17.what is kubectl ?
+A.The Kubernetes command-line tool, kubectl, allows you to run commands against Kubernetes clusters. You can use kubectl to deploy applications,
+  inspect and manage cluster resources, and view logs  
+  
+18.what is ingress ? 
+A. Kubernetes Ingress is an API object that provides routing rules to manage access to the services within a Kubernetes cluster. 
+   This typically uses HTTPS and HTTP protocols to facilitate the routing. Ingress is the ideal choice for a production environment.  
+   
+19.what is events ?
+A.An event in Kubernetes is an object in the framework that is automatically generated in response to changes with other 
+  resources—like nodes, pods, or containers   
+  
+20.what is endpoint ?
+A.In Kubernetes, an EndpointSlice contains references to a set of network endpoints.
+  The control plane automatically creates EndpointSlices for any Kubernetes Service that has a selector specified.   
+  
+21.what is deamon set ?
+A.What is a DaemonSet? Like other workload objects, a DaemonSet manages groups of replicated Pods. 
+  However, DaemonSets attempt to adhere to a one-Pod-per-node model, either across the entire cluster or a subset of nodes  
+  
+22.what is deployment ?
+A.A Kubernetes Deployment tells Kubernetes how to create or modify instances of the pods that hold a containerized application.
+  Deployments can help to efficiently scale the number of replica pods, enable the rollout of updated code in a controlled manner,
+  or roll back to an earlier deployment version if necessary  
+  
+23.what is config map ?
+A.A ConfigMap is an API object that lets you store configuration for other objects to use  
+
+24.what is components ?
+A.
+	API server	:The API (application programming interface) server determines if a request is valid and then processes it
+	Scheduler	:The Kubernetes scheduler is a control plane process which assigns Pods to Nodes.
+      Controller	:In Kubernetes, controllers are control loops that watch the state of your cluster, then make or request changes where needed
+	Etcd:		:etcd is a distributed key-value store that stores the configuration data and state of the Kubernetes cluster.
+            	 It is used by the master node to manage the state of the cluster.
+
+      networking 	:Kubernetes provides a networking model that allows the pods running on different nodes to
+                   communicate with each other. The networking model is implemented through a network plugin, such as Calico or Flannel.
+	kubectl	:
+      master node :
+      worker node :
+      
+25.what is alternative ?
+A.
+	>Azure Kubernetes Service
+	>Google Kubernetes Engine
+	> Mirantis Kubernetes Engine
+	>Amazon Elastic Container Service 	
+	
+26.what is advantages in k8s ?
+A.	Container orchestration savings. ...
+	Increased DevOps efficiency for microservices architecture. ...
+	Deploying workloads in multicloud environments. ...
+	More portability with less chance of vendor lock-in. ...
+	Automation of deployment and scalability. ...
+	App stability and availability in a cloud environment.
+
+27 what is autoscaling API in k8s ?
+A.In Kubernetes, a HorizontalPodAutoscaler automatically updates a workload resource (such as a Deployment or StatefulSet), 
+  with the aim of automatically scaling the workload to match demand. Horizontal scaling means that the response to increased load is to deploy more Pods.
+
+
+28.what is replication controllers ?
+A.Replication Controllers (RCs): RCs ensure that a specified number of pods are running at all times. If a pod fails or is terminated, 
+  the RC creates a new pod to replace it.
+
+
+
+   

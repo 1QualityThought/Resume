@@ -1,0 +1,191 @@
+                                             DOCKER
+											 											 
+1. What is Docker?
+A.>Docker is an open-source lightweight containerization technology. 
+  >It has gained widespread popularity in the cloud and application packaging world. 
+  >It allows you to automate the deployment of applications in lightweight and portable containers.
+             
+	             Initial release date: 20 March 2013
+			    License: Free / Paid
+				Platform: x86-64, ARM, s390x, ppc64le
+				Operating system: Linux, Windows, macOS
+				Stable release: 23.0.1 / 10 February 2023; 11 days ago
+				Programming language: Go
+                               
+2.What is Docker image?
+A.>The Docker image help to create Docker containers. You can create the Docker image with the build command.
+  >Due to this, it creates a container that starts when it begins to run. Every docker images are stored in the Docker registry.							    >
+  
+3.What is docker container ?
+A.>A Docker container  is a lightweight, standalone, executable package of software that includes everything needed to run an application  
+
+4.What are the advantages of using Docker container?
+A.>Standardization
+  >Aexibility
+  >Costs
+  >Velocity
+  >Warehousing
+  >securtity&safety.
+
+5. What are the important features of Docker?
+A.>Easy Modeling
+  >Version control
+  >Placement/Affinity
+  >Application Agility
+  >Developer Productivity
+  >Operational Efficiencies
+  
+6.What are the main drawbacks of Docker?
+A.>Site constraints
+  >Capital intensiveness
+  >Stacking
+  >Repositioning
+  >Thefr and Losses
+  >llicit Trade
+
+7. What is Docker Engine?
+A.>Docker Engine is an open source containerization technology for building and containerizing your applications.
+   Docker Engine acts as a client-server application .
+
+8.Explain Registries
+A.>There are two types of registry is
+  >Public Registry
+  >Private Registry
+  >Docker’s public registry is called Docker hub, which allows you to store images privately. 
+  >In Docker hub, you can store millions of images.  
+  
+9.What is memory-swap flag?
+A.>Memory-swap is a modified flag that only has meaning if- memory is also set. 
+  >Swap allows the container to write express memory requirements to disk when the container has exhausted all the RAM which is available to it.  
+  
+10.Explain Docker Swarm?
+A. Docker Swarm is native gathering for docker which helps you to a group of Docker hosts into a single and virtual docker host.
+   It offers the standard docker application program interface.
+
+11.What the states of Docker container?
+A.Important states of Docker container are:
+  >Running 
+  >Paused
+  >Restarting
+  >Exited
+  
+12.What is Docker hub?
+A.>Docker hub is a cloud-based registry that which helps you to link to code repositories. 
+  >It allows yo u to build, test, store your image in Docker cloud. You can also deploy the image to your host with the help of Docker hub  
+  
+13.What is Virtualization?
+A.>Virtualization is a technology that allows multiple virtual instances of operating systems, applications, or resources
+   to run on a single physical machine, creating a simulated environment that is isolated from the underlying hardware.
+  >This enables greater flexibility and efficiency in managing computing resources,  
+  
+14.What is Hypervisor?
+A.>A hypervisor is a type of computer software, firmware or hardware that creates and runs virtual machines.
+   A computer on which a hypervisor runs one or more virtual machines is called a host machine, and each virtual machine is called a guest machine.
+
+15.Explain Docker object labels
+A. Docker object labels is a method for applying metadata to docker objects including, images, containers, 
+   volumes, network, swam nodes, and services.
+
+16.List out some important advanced docker commands
+A. >Command	Description
+   >docker info	        Information Command
+   >docker pull     	Download an image
+   >docker stats	    Container information
+   >Docker images	    List of images downloaded
+   
+17.How does communication happen between Docker client and Docker Daemon?
+A. You can communicate between Docker client and Docker Daemon with the combination of Rest API, socket.IO, and TCP.
+
+18.Explain the process of scaling your Docker containers
+A. The Docker containers can be scaled to any level starting from a few hundred to even thousands or millions of containers.
+   upgrading an existing host server with increased CPU, memory, disk I/O speed, and network I/O speed
+   
+19.How can you run multiple containers using a single service?
+A. By using docker-compose, you can run multiple containers using a single service. All docker-compose files uses yaml language.   
+
+20.Explain Docker Trusted Registry?
+A. Docker Trusted Registry (DTR) is a solution that allows organizations to store and manage Docker containers.
+   However, DTR can be run as an EC2 instance, allowing complete control over how and where the registry is available and
+   accessed from within your environment.
+
+21.What are Docker Namespaces?
+A. The Namespace in Docker is a technique which offers isolated workspaces called the Container.
+   Namespaces also offer a layer of isolation for the Docker containers.   
+  
+22.what is container life  cycle ?
+A.  >Creation 
+    >Initialization
+    >Running 
+    >Monitoring
+    >Scaling
+    >Updating
+    >Removal
+ 
+23.What is client?
+A. Docker provides Command Line Interface tools to the client to interact with Docker daemon.
+
+24.what is docker volume?
+A.volumes are the preffered machanism for the persisting data generated by and used by a docker container
+
+  uses of docker volume
+ 
+   >decoupling container from storage 
+   >Share volume among different container
+   >Attache volume to container 
+   >On deleting container volume does not delete
+									
+25.What is docker networking ?
+A.>docker take care of the networking aspects so that  the containers can communicate other container and 
+   also with the docker host.									
+  >This adapter is created when docker is installed on the docker host .
+  >This is a bridge between the Docker Host and the Linux Host .
+
+26.What is docker Deamon ?
+A.>The docker Deamon id a service that runs on your host operating system .It currectly only runs on Linux 
+   because it depends on a number of Linux Kernal features ,
+ > but there are a few was to run Docker on MACos and Windows too . the docker deamon itself exposes a REST API.
+
+27.what is docker plugins (D) ?
+A.Docker plugins are out-of-process extensions which add capabilities to the Docker Engine.
+
+28.what is docker cgroup (coontrol group) ?
+A.Control Groups (cgroups) are a feature of the Linux kernel that allow you to limit the
+  access processes and containers have to system resources such as CPU, RAM, IOPS and network. 									
+
+                    LINUX COMMAND
+									
+27.What command should you run to see all running container in Docker?
+A.                  $ docker ps  
+
+28.Write the command to stop the docker container ?
+A .        $ sudo docker stop container name 
+
+29. What is the command to run the image as a container? 
+A.$ sudo docker run -i -t alpine /bin/bash
+
+30. What are the common instruction in Dockerfile?
+A   The common instruction in Dockerfile are: FROM, LABEL, RUN, and CMD.
+
+31. Write a Docker file to create and copy a directory and built it using python modules?
+A.            FROM pyhton:2.7-slim
+              WORKDIR /app    
+              COPY . /app
+              docker build –tag
+			  
+32. Where the docker volumes are stored?
+A.           /var/lib/docker/volumes
+			  
+33.What are the command to control Docker with Systemd?
+A.        systemctl start/stop docker
+          service docker start/stop
+	
+33.How to use JSON instead of YAML compose file?
+A.    docker-compose -f docker-compose.json up
+	
+34.What is the command you need to give to push the new image to Docker registry?
+A.         docker push myorg/img	
+
+35.What is the method for creating a Docker container?
+A. You can use any of the specific Docker images for creating a Docker container using the below command.
+                     docker run -t -i command name
+					 
